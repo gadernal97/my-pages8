@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --cor0:#520A52;
+    --cor1:#f1f1f1;
+    --cor2:#D119D1;
+    --cor3:#522C52;
+    --cor4:#A113A1;
+    --fontM:'Poppins';
+    --fontP:'Roboto Condensed';
+    
+}
+body{
+    background-color: var(--cor1);
+}
+header{
+    background-color: var(--cor2);
+    font-family: var(--fontH);
+    position: relative;
+    height: 100px;
+}
+header div{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    
+}
+#menu ul{
+    width: 100%;
+    background-color: var(--cor4);
+    list-style: none;
+    padding: 0%;
+    float: right;
+    margin: 0%;
+    font-family: var(--fontM);
+    font-size: 1.4rem;
+}
+#menu ul li{display:inline}
+#menu ul li a{
+    text-decoration:none;
+    float: right;
+    padding: 4px 12px;
+    color:var(--cor1)
+}
+#menu ul li a:hover{
+    background-color: var(--cor1);
+    color: var(--cor3);
+    transition-duration: 0.7s;
+}
+main{
+    width: 1000px;
+    margin: auto;
+    padding: 15px;
+    font-family: var(--fontP);
+    font-size: 1.2rem;
+    line-height:1.9rem
+}
+main img{
+    width: 100%;
+}
+main .img1{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 15px;
+}
+main .img2{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    
+}
+main ul{
+    list-style-position: inside;
+}
+footer{
+    background-color: var(--cor4);
+    font-family: var(--fontP);
+    margin-top: 100px;
+}
+footer p{
+    text-align: center;
+    
+}
+@media screen and (min-device-width:300px){
+    body{
+        background-color: var(--cor1);
+        width: 100%;
+    }
+    main{
+        width: 80%;
+    }
+    footer{
+        width: 100%;
+    }
+    
+}
